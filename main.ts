@@ -14,7 +14,7 @@ if (text.length > 200) {
   );
 }
 if (text.includes("\n")) {
-  throw new Error("entry must be a single line");
+  throw new Error("entry must be a single line (no newline characters)");
 }
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
